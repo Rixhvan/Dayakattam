@@ -20,8 +20,6 @@ npm install
 npm run dev        # local dev server with hot reload
 npm run build       # type-checks, then produces a production build in dist/
 npm run preview     # serves the production build locally
-npm test            # runs the test suite once (vitest)
-npm run test:watch  # runs the test suite in watch mode
 ```
 
 Open the dev server URL printed in your terminal (usually
@@ -47,7 +45,6 @@ src/
   main.ts        entry point, boots the scene and the UI controller
   style.css      all styling
 index.html        page shell + markup for the menu, HUD and modals
-tests/           vitest test suite for the engine, board topology and AI
 ```
 
 The rules engine (`src/game/`) has **no dependency on rendering** — it's
